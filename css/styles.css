@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0
+}
+/* header */
+header {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 5%;
+    width: 100%;
+}
+ul {
+    display: flex;
+    margin-right: 10%;  
+}
+ul a {
+    text-decoration: none;
+    color: white;
+}
+li {
+    list-style-type: none;
+    padding: 1rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+header h3 {
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10%;
+    font-size: 2rem;
+    border-bottom: 10px dashed white;
+}
+
+
+/* main content */
+.banner {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(128, 128, 128, 0.5), rgba(255, 255, 255, 0)), /* Black to gray to transparent */
+    url('../img/back1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1500px;
+    min-width: 600px;
+ 
+}
+.main {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    color: white;
+}
+.main h1 {
+    font-size: 12rem;
+}
+.main h2 {
+    font-size: 13rem;
+}
+.main p {
+    font-size: 2rem;
+}
+.bio {
+    background-color: rgb(31, 30, 30);
+    color: white;
+}
+.projects {
+    background-color: lightgray;
+}
+.project-preview {
+    display: flex;
+    margin: 1rem 15rem;
+    
+}
+.projects h3 {
+    font-size: 2rem;
+    margin: 0rem 45rem;
+    color: rgb(70, 67, 67);
+}
+.languages {
+    border: 1px solid gray;
+    margin: 2rem 4rem;
+    padding: 2rem
+}
+
+.languages {
+    display: flex;
+}
+
+
+
+.bio {
+    display: flex;
+    padding: 4rem;
+}
+.bio img {
+    border: 2px solid rgb(200, 199, 199);
+}
+.certs {
+    background-color: lightgray;
+    width: 80%;
+    padding: 1rem 12rem;
+    margin: 0 2rem;
+}
+.hallofcert {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5rem 1rem;
+}
+.certs img {
+    max-width: 100%;
+    padding: 2rem;
+}
+.animated-text {
+    font-size: 1.5em;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid #000;
+    animation: typing 3.5s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Cursor blink animation */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+
+
+
+/* footer */
+footer {
+    background-color: rgb(96, 94, 94);
+    color: white;
+}
+footer form {
+    
+}
+.footer {
+    color:rgb(38, 37, 37)
+}
