@@ -52,7 +52,8 @@ header {
 }
 nav ul {
     display: flex;
-    margin-right: 10%;
+    margin-right: 20%;
+    padding-right: 100px;
 }
 ul a {
     text-decoration: none;
