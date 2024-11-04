@@ -1,3 +1,43 @@
+/* font size */
+/* fonts */
+* {
+    font-family: 'SansPro-semibold';
+}
+@font-face {
+    font-family: 'SansPro-Black';
+    src: url(fonts/source-sans-pro/SourceSansPro-Black.otf);
+  }
+  @font-face {
+    font-family: 'SansPro-regular';
+    src: url(fonts/source-sans-pro/SourceSansPro-Regular.otf);
+  }
+  @font-face {
+    font-family: 'SansPro-light';
+    src: url(fonts/source-sans-pro/SourceSansPro-Light.otf);
+  }
+  @font-face {
+    font-family: 'SansPro-semibold';
+    src: url(fonts/source-sans-pro/SourceSansPro-Semibold.otf);
+  }
+
+  @font-face {
+    font-family: 'Poppins-Light';
+    src: url(fonts/poppins/Poppins-Light.otf);
+  }
+
+  @font-face {
+    font-family: 'Poppins-Black';
+    src: url(fonts/poppins/Poppins-Black.otf);
+  }
+  @font-face {
+    font-family: 'Poppins-regular';
+    src: url(fonts/poppins/Poppins-Regular.otf);
+  }
+  @font-face {
+    font-family: 'Poppins-semibold';
+    src: url(fonts/poppins/Poppins-Medium.otf);
+  }
+
 * {
     margin: 0;
     padding: 0
@@ -10,9 +50,9 @@ header {
     top: 5%;
     width: 100%;
 }
-ul {
+nav ul {
     display: flex;
-    margin-right: 10%;  
+    margin-right: 10%;
 }
 ul a {
     text-decoration: none;
@@ -33,7 +73,10 @@ header h3 {
     font-size: 2rem;
     border-bottom: 10px dashed white;
 }
-
+main {
+    background-color: rgb(31, 30, 30);
+    color: white;
+}
 
 /* main content */
 .banner {
@@ -44,7 +87,8 @@ header h3 {
     background-position: center;
     height: 1500px;
     min-width: 600px;
- 
+    font-family: 'SansPro-light';
+
 }
 .main {
     position: absolute;
@@ -65,85 +109,303 @@ header h3 {
     background-color: rgb(31, 30, 30);
     color: white;
 }
+
+/* Projects section*/
 .projects {
     background-color: lightgray;
 }
 .project-preview {
     display: flex;
     margin: 1rem 15rem;
-    
+
 }
-.projects h3 {
+
+/* Styling for the projects section */
+.projects {
+    background-color: #1f1f1f; /* Dark background color */
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .projects h3 {
     font-size: 2rem;
-    margin: 0rem 45rem;
-    color: rgb(70, 67, 67);
-}
-.languages {
-    border: 1px solid gray;
-    margin: 2rem 4rem;
-    padding: 2rem
-}
+    color: #f0a500; /* Accent color for section heading */
+    margin-bottom: 20px;
+  }
 
-.languages {
+  .project-preview {
     display: flex;
-}
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .project-preview div {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 100%; /* Ensures it scales on smaller screens */
+  }
+
+  .project-preview img {
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+  }
+
+  .project-preview img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Shadow effect on hover */
+  }
+
+  /* Mobile adjustments */
+  @media (max-width: 768px) {
+    .project-preview {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 
 
 
+/* about me */
 .bio {
+    width: 100%;
     display: flex;
-    padding: 4rem;
+    padding: 5rem;
+    margin: 0 auto;
 }
 .bio img {
+    display: inline-block;
     border: 2px solid rgb(200, 199, 199);
+    max-width: 200px;
+    margin: auto auto;
 }
-.certs {
-    background-color: lightgray;
-    width: 80%;
-    padding: 1rem 12rem;
-    margin: 0 2rem;
+.bio h3 {
+    padding: 1rem 0;
 }
-.hallofcert {
+
+.aboutme {
+    padding:  0 1rem;
+    margin-left: 5%;
+    margin-right: 20%;
+    line-height: 2rem;
+    font-size: 1.1rem;
+    flex-grow: 1;
+}
+.aboutme button {
+    text-transform: uppercase;
+    background-color: rgb(92, 86, 78);
+    font-size: 1rem;
+    margin: 1rem 1rem;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+}
+
+/* get in touch */
+.main-contact {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 5rem 1rem;
+    width: 80%;
+    margin: 8rem auto;
 }
-.certs img {
-    max-width: 100%;
+
+
+.getintouch h3 {
+    font-size: 2rem;
     padding: 2rem;
 }
-.animated-text {
-    font-size: 1.5em;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 0.15em solid #000;
-    animation: typing 3.5s steps(40, end) forwards, blink-caret 0.75s step-end infinite;
+.getintouch input, textarea{
+    font-size: 1.2rem;
+    padding: 1.5rem 4rem;
+    margin: 1rem;
+    border-radius: 20px;
+    border: none;
+
 }
-
-/* Typing animation */
-@keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+.getintouch button {
+    font-size: 1rem;
+    padding: 1.5rem 3rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 30px;;
 }
-
-/* Cursor blink animation */
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: black; }
+.contact-details {
+    font-size: 1.5rem;
+    padding-top: 7rem;
+    padding-left: 10rem;
+    line-height: 2rem;
 }
-
-
-
+.contact-details h3 {
+    padding-bottom: 1rem;
+}
+.contact-details h4 {
+    padding-top: 1rem;
+}
 
 /* footer */
 footer {
-    background-color: rgb(96, 94, 94);
-    color: white;
+    background-color: rgb(41, 39, 39);
+    color: rgb(122, 115, 115);
+    padding: 2rem;
 }
-footer form {
-    
-}
+
 .footer {
-    color:rgb(38, 37, 37)
+    color:rgb(127, 118, 118);
+    padding: 2rem;
+    text-align: center;
+}
+
+  /* Certificates section */
+  .certs .hallofcert {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .certs .hallofcert img {
+    width: 500px;
+    height: auto;
+    border-radius: 4px;
+    transition: transform 0.3s ease;
+  }
+
+  .certs .hallofcert img:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+
+  /* Media query for mobile */
+  @media (max-width: 768px) {
+    .certs .hallofcert {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  /* General Section Styling */
+.skills-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+/* Card Styling */
+.skills-card {
+    background-color: #333;
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px;
+    max-width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Title Styling */
+.skills-card h3 {
+    font-size: 1.5rem;
+    color: #f0a500;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+/* List Styling */
+.skills-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-card li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Icon Styling */
+.skills-card .icon {
+    font-size: 1.3rem;
+    margin-right: 10px;
+    color: #f0a500; /* Match icon color with title color */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .skills-section {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 768px) {
+    header h3 {
+        font-size: 1.2rem;
+    }
+    nav ul li {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+    .main h1 {
+        font-size: 2.5rem;
+    }
+    .main h2 {
+        font-size: 3.5rem;
+    }
+    .bio {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .bio img {
+        margin-bottom: 1rem;
+    }
+    .skills-card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .main h1, .main h2 {
+        font-size: 2rem;
+    }
+    .main p {
+        font-size: 1rem;
+    }
+    .getintouch input, .getintouch textarea {
+        width: 90%;
+    }
+    .contact-details {
+        padding: 1rem;
+    }
+    .project-preview div {
+        width: 100%;
+    }
+}
+
+.certs h4 {
+    font-size: 30px;
+    padding: 10px;
+    margin: 10px
+}
+.main p {
+    font-family: 'SansPro-light';
 }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,30 +8,32 @@
 </head>
 <body>
     <header>
-        <h3>A N</h3>  
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Resume</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
+        <h3>A N</h3>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#prosect">Portfolio</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section class="banner">
             <img src="" alt="">
             <div class="main">
-                <h1 class="animated-text">Hi, I'm</h1>
-                <h2 class="animated-text">Aimable</h2>
+                <h1>Hi, I'm</h1>
+                <h2>Aimable</h2>
                 <div class="animated-text">
-                    <p>a software junnor enginner</p>
+                    <p>a junior software enginner</p>
                 </div>
             </div>
             <div class="occupation">
-                
+
             </div>
         </section>
-        <section class="projects">
+        <section class="projects" id="prosect">
             <h3>Most Recent projects</h3>
             <div class="project-preview">
                 <div class="mario">
@@ -44,66 +46,66 @@
                 </div>
             </div>
         </section>
-        <section class="languages">
-            <div class="technologies">
-                <h3>Technologies that I have used so far...</h3>
+        <section class="skills-section" id="resume">
+            <div class="skills-card">
+                <h3>Programming Languages</h3>
                 <ul>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>python</li>
+                    <li><span class="icon">💻</span> JavaScript</li>
+                    <li><span class="icon">🔤</span> HTML</li>
+                    <li><span class="icon">🎨</span> CSS</li>
+                    <li><span class="icon">🐍</span> Python</li>
                 </ul>
             </div>
 
-            <div class="tools">
-                <h3>Tools that I use</h3>
-                <p>Git</p>
-                <p>Linux</p>
-                <p>Vs code</p>
+            <div class="skills-card">
+                <h3>Tools</h3>
+                <ul>
+                    <li><span class="icon">🔧</span> Git</li>
+                    <li><span class="icon">🐧</span> Linux</li>
+                    <li><span class="icon">🖊️</span> VSCode</li>
+                </ul>
             </div>
-            <div class="soft-skills">
 
+            <div class="skills-card">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li><span class="icon">🗣️</span> Communication (English, Kinyarwanda)</li>
+                    <li><span class="icon">⌨️</span> Typing (65 wpm)</li>
+                </ul>
             </div>
         </section>
 
-        <section class="Education">
-            <h3>Bach Degree in Software Enginnering</h3>
-        </section>
-
-        <section class="softskills">
-            <p>Proficient Engish</p>
-            <p>French intermediate</p>
-            <p>Swahili intermediate</p>
-            <p>Kinyarwanda Proficient</p>
-        </section>
-        <section class="certs"></section>
+        <section class="certs">
             <h4>Certificates awarded</h4>
             <div class="hallofcert">
-                <img src="certs/cert1.png" alt="">
-                <img src="certs/cert2.png" alt="">
-                <img src="certs/cert3.png" alt="">
-                <img src="certs/cert5.png" alt="">
+                <img src="img/certs/cert1.png" alt="">
+                <img src="img/certs/cert2.png" alt="">
+                <img src="img/certs/cert3.png" alt="">
+                <img src="img/certs/cert5.png" alt="">
+                <img src="img/certs/access web data cert.pdf" alt="">
             </div>
+        </section>
+
         <section class="bio">
             <img src="img/aboutme.jpg" alt="" width="200px">
-            <div>
+            <div class="aboutme" id="about">
                 <h3>About me</h3>
-                <p>Hey, I am Aimable a passionate software enginner... Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi inventore minus omnis laboriosam voluptas rerum </p>
+                <p>Hey, I am Aimable a passionate junior software enginner currently pursuing my bachelors degree at the African Leadership University, I have been gaining valuable skills since my enrollment and my love for technology and using it to solve people's problem has been growing, I cant wait to connet and work with you to see what we both can achive together. </p>
                 <button>connect</button>
                 <button>Hire me</button>
             </div>
-            
+
         </section>
     </main>
     <footer>
-        <h3>Get In Touch</h3>
-        <div class="main-contact">
+        <div class="main-contact" id="contact">
             <div class="getintouch">
+                <h3>Get In Touch</h3>
                 <form >
                     <input type="text" id="name" placeholder="Your Name" ><br>
                     <input type="email" placeholder="Your Email"><br>
                     <input type="phone" placeholder="Your Phone"> <br>
-                    <textarea name="message" id="message" rows="12" cols="5" placeholder="Write a message"></textarea><br>
+                    <textarea name="message" id="message" rows="15" cols="35" placeholder="Write a message"></textarea><br>
                 </form>
                 <button>send</button>
 
@@ -123,7 +125,8 @@
             <section class="contact"> </section>
             <nav></nav>
             <p>&copy; All rights reserved 2024</p>
-        </div> 
+        </div>
+        <!-- social media icons -->
     </footer>
     <script src="js/script.js"></script>
 </body>
