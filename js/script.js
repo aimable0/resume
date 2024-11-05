@@ -14,7 +14,7 @@ const timer = setInterval(() => {
 }, 120);
 
 const p = document.querySelector('.animated-text p')
-const text1 = 'A junior software enginner';
+const text1 = 'A junior software enginner ...';
 let m = 0;
 const timer1 = setInterval(() => {
     if (m == text1.length) {
