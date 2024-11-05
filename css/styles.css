@@ -221,6 +221,7 @@ main {
     display: flex;
     width: 80%;
     margin: 8rem auto;
+    justify-content: space-around;
 }
 
 
@@ -273,7 +274,9 @@ footer {
   .certs .hallofcert {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 25px;
+    justify-content: space-around;
+    width: 90%;
   }
 
   .certs .hallofcert img {
@@ -286,7 +289,9 @@ footer {
   .certs .hallofcert img:hover {
     transform: scale(1.1); /* Slight zoom effect on hover */
   }
-
+  .hallofcert {
+    margin: 0 auto;
+  }
   /* Media query for mobile */
   @media (max-width: 768px) {
     .certs .hallofcert {
@@ -413,5 +418,6 @@ footer {
 .certs h4 {
     font-size: 30px;
     padding: 10px;
-    margin: 10px
+    margin: 10px;
+    text-align: center;
 }
